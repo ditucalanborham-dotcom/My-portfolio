@@ -12,7 +12,7 @@ function Footer() {
           {/* Brand */}
           <div className="col-md-4 mb-4">
             <h4 className="mb-3">
-              <span className="text-primary"><Rham></Rham></span>.Dev
+              <span className="text-primary">Borham</span>.Dev
             </h4>
             <p className="text-muted">
               A passionate frontend developer creating beautiful and functional
