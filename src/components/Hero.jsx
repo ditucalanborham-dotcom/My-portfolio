@@ -49,7 +49,7 @@ function Hero() {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 text-center d-none d-lg-block">
+          <div className="col-lg-6 col-md-12 text-center d-lg-block">
             <div className="hero-image">
               <img
                 src={personalInfo.profileImage}
