@@ -6,7 +6,7 @@ export const personalInfo = {
   phone: "09639207136",
   // bio: "I am a fourth-year student currently taking Bachelor of Science in Information Technology major in Network System, graduating at the end of this second semester. While I have no formal work experience yet, my academic training has given me a foundation in networking, database management, and IT concepts. I have gained hands-on experience through school projects in system development, coding, and robotics.",
   socials: {
-    github: "https://github.com/Borham02",
+    github: "https://github.com/ditucalanborham-dotcom",
     linkedin: "https://www.linkedin.com/in/borham-ditucalan-7781662b0/", 
     twitter: "#", 
   },
