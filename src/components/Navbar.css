@@ -3,7 +3,12 @@
   box-shadow: 0 0 30px rgba(0, 255, 200, 0.15);
   padding: 1rem 0;
   background: #000000 !important;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
   animation: slideInDown 0.8s ease-out;
 }
 

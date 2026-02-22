@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Borham Ditucalan",
   title: "Front-end Developer",
-  location: "Xavier Heights, Cagayan De Oro",
+  location: "Xavier Heights, Cagayan De Oro City",
   email: "ditucalan.borham@s.msumain.edu.php",
   phone: "09639207136",
   // bio: "I am a fourth-year student currently taking Bachelor of Science in Information Technology major in Network System, graduating at the end of this second semester. While I have no formal work experience yet, my academic training has given me a foundation in networking, database management, and IT concepts. I have gained hands-on experience through school projects in system development, coding, and robotics.",
@@ -58,8 +58,8 @@ export const experience = [
 export const education = {
   degree: "Bachelor of Science in Information Technology",
   major: "Network System",
-  university: "Mindanao State University - Iligan Institute of Technology",
-  graduationDate: "End of Second Semester 2026",
+  university: "Mindanao State University - MAIN",
+  graduationDate: "July 2026",
   gpa: "3.8", 
 };
 

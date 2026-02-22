@@ -1,5 +1,5 @@
 import React from "react";
-import { education, experience } from "../data/portfolio";
+import { education } from "../data/portfolio";
 import "./About.css";
 
 function About() {
@@ -11,7 +11,7 @@ function About() {
           {/* Bio */}
           <div className="col-lg-6 mb-4">
             <div className="about-card">
-              <h3 className="mb-3">Who I Am</h3>
+              <h3 className="mb-3">Who Am I</h3>
               <p className="lead">
                 I am a fourth-year student currently taking Bachelor of Science in Information Technology major in Network System, 
                 graduating at the end of this second semester. While I have no formal work experience yet, my academic training 
@@ -32,28 +32,10 @@ function About() {
                 </p>
                 <p className="text-muted">{education.university}</p>
                 <p className="small">
-                  Graduating: <strong>{education.graduationDate}</strong>
+                  Graduation: <strong>{education.graduationDate}</strong>
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Experience */}
-        <div className="row mt-5">
-          <div className="col-12">
-            <h3 className="mb-4">Experience & Leadership</h3>
-            {experience.map((exp) => (
-              <div key={exp.id} className="experience-item mb-4">
-                <div className="d-flex justify-content-between align-items-start">
-                  <div>
-                    <h5 className="text-primary">{exp.title}</h5>
-                    <p className="text-muted small">{exp.year}</p>
-                  </div>
-                </div>
-                <p className="mt-2">{exp.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

@@ -3,38 +3,11 @@ import { personalInfo } from "../data/portfolio";
 import "./Contact.css";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // In a real app, you'd send this to a backend service like EmailJS or FormSubmit
-    console.log("Form submitted:", formData);
-
+  const handleSubmit = () => {
     // Show success message
     setSubmitted(true);
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
 
     // Hide success message after 5 seconds
     setTimeout(() => {
@@ -88,7 +61,11 @@ function Contact() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit}>
+              <form 
+                action="https://formspree.io/f/maqdpkqa" 
+                method="POST"
+                onSubmit={handleSubmit}
+              >
                 <div className="mb-3">
                   <label htmlFor="name" className="form-label">
                     Your Name
@@ -98,8 +75,6 @@ function Contact() {
                     className="form-control"
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     placeholder="Enter your full name"
                   />
@@ -114,8 +89,6 @@ function Contact() {
                     className="form-control"
                     id="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     placeholder="Enter your email address"
                   />
@@ -130,8 +103,6 @@ function Contact() {
                     className="form-control"
                     id="subject"
                     name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
                     required
                     placeholder="What is this about?"
                   />
@@ -145,8 +116,6 @@ function Contact() {
                     className="form-control"
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     required
                     rows="5"
                     placeholder="Your message here..."
