@@ -1,0 +1,271 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #FFFFFF;
+  background-color: #0a0a0a;
+  line-height: 1.6;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CCCCCC 100%);
+  color: #0a0a0a;
+  border-color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+.btn-outline-primary {
+  color: #FFFFFF;
+  border-color: #00FFC8;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: #00FFC8;
+  color: #0a0a0a;
+  border-color: #00FFC8;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+}
+
+/* Utility Classes */
+.text-primary {
+  color: #00FFC8 !important;
+}
+
+.text-muted {
+  color: #FFFFFF !important;
+}
+
+.lead {
+  color: #FFFFFF !important;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Section Padding */
+section {
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+}
+
+/* Advanced Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: rgba(0, 255, 200, 0.75);
+  }
+}
+
+@keyframes wordSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.5), 0 0 40px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 255, 200, 0.8), 0 0 60px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes textGlowAnimation {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(0, 255, 200, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 200, 0.8), 0 0 40px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateBorder {
+  0% {
+    border-color: #FFFFFF;
+  }
+  50% {
+    border-color: #00FFC8;
+  }
+  100% {
+    border-color: #FFFFFF;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .footer {
+    display: none;
+  }
+}
