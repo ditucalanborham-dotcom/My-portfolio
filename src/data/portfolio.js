@@ -10,7 +10,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/borham-ditucalan-7781662b0/", 
     twitter: "#", 
   },
-  profileImage: "/DITUCALAN_CSRAW.JPG", 
+  profileImage: "/1771731826456.jpg", 
 };
 
 
