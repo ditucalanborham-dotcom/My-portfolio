@@ -13,7 +13,7 @@ function Navbar() {
       <div className="container-fluid">
         {/* Logo/Brand */}
         <a className="navbar-brand fw-bold" href="#home">
-          <span className="text-header">Borham</span>.Dev
+          <span className="text-header">Rham</span>.Dev
         </a>
 
         {/* Toggle Button for Mobile */}
